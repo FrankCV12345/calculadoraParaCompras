@@ -5,14 +5,14 @@
         Calculadora para compras 
     </h1>
     <asp:TextBox ID="txtNombre" runat="server" CssClass="txtNombre"  ></asp:TextBox>
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtNombre" CssClass="alert alert-primary" ErrorMessage="Este campo es necesario"></asp:RequiredFieldValidator>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtNombre" CssClass="mgValidate" ErrorMessage="Este campo es necesario"></asp:RequiredFieldValidator>
     <div class="cajaItems form-group">
         <input id="Button1" type="button" onclick="AddItem()" class="btn btn-dark" value="Agregar producto" />
 
     </div>
     <div class="cajaTotales">
         Total :<!-- <asp:Label ID="lblTotal" runat="server" Text="---"></asp:Label>--> 
-       <asp:TextBox ID="txtTotal" runat="server" CssClass="txtTotal" ReadOnly="True"></asp:TextBox>
+       <asp:TextBox ID="txtTotal" runat="server" CssClass="txtTotal"></asp:TextBox>
         <br />
         <asp:Button ID="btnGuarda" class="btn btn-primary" runat="server" Text="Guardar total de compra" OnClick="btnGuarda_Click" />
     </div>
@@ -21,8 +21,8 @@
         function AddItem() {
             $(".cajaItems").append(" <br/>");
             $(".cajaItems").append(" <input type='text' class='nombreProudcto' placeholder='Nombre del producto'>");
-            $(".cajaItems").append(" <input type='number' class='cantidad' placeholder='Cant' onkeyup='CalculatotalItem(this)' >");
-            $(".cajaItems").append(" <input type='number' class='precio' placeholder='Prec' onkeyup='CalculatotalItem(this)' >");
+            $(".cajaItems").append(" <input type='number' class='cantidad' placeholder='Cant' step='any' onkeyup='CalculatotalItem(this)' >");
+            $(".cajaItems").append(" <input type='number' class='precio' placeholder='Prec' step='any' onkeyup='CalculatotalItem(this)' >");
             $(".cajaItems").append("<label class='totalItem'> &nbsp; --- &nbsp; </label>");
             $(".cajaItems").append("<input id='Button1' type='button' onclick='AddItem()' class='btn btn - dark' value='+' />")
         }

@@ -22,7 +22,7 @@ namespace CalculadoraParaCompras
 
         protected void btnGuarda_Click(object sender, EventArgs e)
         {
-            Response.Write("<script> alert('" + txtTotal.Text + "')</script>");
+            Response.Write(  txtTotal.Text);
         }
     }
 }

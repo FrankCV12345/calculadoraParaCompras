@@ -29,6 +29,9 @@ textarea {
     border-radius: 4px;
     max-width:280px;
 }
+.mgValidate {
+    color : red;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {
