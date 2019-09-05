@@ -6,7 +6,7 @@
             </asp:DropDownList>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="listaClients" CssClass="mgValidate" ErrorMessage="Selecione un cliente"></asp:RequiredFieldValidator>
             <br />
-            <asp:Button ID="btConsultar" runat="server" Text="Consultar" CssClass="btn btn-primary" />
+            <asp:Button ID="btConsultar" runat="server" Text="Consultar" CssClass="btn btn-primary" OnClick="btConsultar_Click" />
         </div>
 
     <div class="cont-totalCompras">
