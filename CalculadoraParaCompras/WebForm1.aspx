@@ -47,7 +47,9 @@
             }
 
             for (i = 0; i < lstlbl.length; i++) {
-                   totalDeitems = totalDeitems + parseInt(  lstlbl[i].innerHTML)
+                if (!isNaN(parseFloat(lstlbl[i].innerHTML))) {
+                    totalDeitems = totalDeitems + parseFloat(lstlbl[i].innerHTML)
+                }
             }
             txtTotal.value = totalDeitems
 

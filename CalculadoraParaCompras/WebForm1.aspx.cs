@@ -23,7 +23,7 @@ namespace CalculadoraParaCompras
 
         protected void btnGuarda_Click(object sender, EventArgs e)
         {
-            string strArchivo = "C:\\Users\\Juan\\Desktop\\Calculadora\\calculadoraParaCompras\\CrearTxt.txt";
+            string strArchivo = "C:\\Users\\FCV\\Desktop\\master calculadora para compras  .net\\calculadoraParaCompras\\CrearTxt.txt";
             string[] arrLeerArchivo = File.ReadAllLines(strArchivo);
             int intTamaño = arrLeerArchivo.Length;
             Datos[] arrDatos = new Datos[intTamaño];

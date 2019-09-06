@@ -24,7 +24,7 @@ namespace CalculadoraParaCompras
             int posicion = listaClients.SelectedIndex;
             lstTotalcompras.Items.Clear();
 
-            string strArchivo = "C:\\Users\\Juan\\Desktop\\Calculadora\\calculadoraParaCompras\\CrearTxt.txt";
+            string strArchivo = "C:\\Users\\FCV\\Desktop\\master calculadora para compras  .net\\calculadoraParaCompras\\CrearTxt.txt";
             string[] arrLeerArchivo = File.ReadAllLines(strArchivo);
             int intTamaño = arrLeerArchivo.Length;
             WebForm1.Datos[] arrDatos = new WebForm1.Datos[intTamaño];
@@ -55,7 +55,7 @@ namespace CalculadoraParaCompras
         }
 
         public void llenaCombox() {
-            string strArchivo = "C:\\Users\\Juan\\Desktop\\Calculadora\\calculadoraParaCompras\\CrearTxt.txt";
+            string strArchivo = "C:\\Users\\FCV\\Desktop\\master calculadora para compras  .net\\calculadoraParaCompras\\CrearTxt.txt";
             string[] arrLeerArchivo = File.ReadAllLines(strArchivo);
 
             foreach (var item in arrLeerArchivo)
